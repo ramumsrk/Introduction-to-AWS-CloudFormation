@@ -1,0 +1,1 @@
+# [Launching a template with multiple resources](https://www.linkedin.com/learning/introduction-to-aws-cloudformation/launching-a-template-with-multiple-resources)

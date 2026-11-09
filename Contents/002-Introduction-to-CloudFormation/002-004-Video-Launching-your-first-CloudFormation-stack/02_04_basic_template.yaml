@@ -1,0 +1,12 @@
+---
+AWSTemplateFormatVersion: '2010-09-09'
+Description: |
+  This template creates a single EC2
+  instance with a hard-coded AMI and size
+Resources:
+  MyInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-02c3beea7527cdf43
+      # ImageId: ami-0b1fad76866c766b2
+      InstanceType: m7i-flex.large

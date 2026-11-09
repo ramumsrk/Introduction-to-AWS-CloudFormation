@@ -1,0 +1,14 @@
+---
+AWSTemplateFormatVersion: "2010-09-09"
+Description: |
+  Demo the use of Parameters
+Parameters:
+  MyImageId:
+    Type: String
+    Description: ami of the image to use
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: m7i-flex.large
+      ImageId: !Ref MyImageId

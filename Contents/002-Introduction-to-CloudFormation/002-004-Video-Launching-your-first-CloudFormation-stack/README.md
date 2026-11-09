@@ -1,0 +1,1 @@
+# [Launching your first CloudFormation stack](https://www.linkedin.com/learning/introduction-to-aws-cloudformation/launching-your-first-cloudformation-stack)

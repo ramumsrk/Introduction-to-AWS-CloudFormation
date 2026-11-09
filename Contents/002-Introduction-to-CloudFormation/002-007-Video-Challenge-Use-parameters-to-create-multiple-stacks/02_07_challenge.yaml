@@ -1,0 +1,44 @@
+---
+AWSTemplateFormatVersion: '2010-09-09'
+Description: |
+  My attempt at this challenge
+Parameters:
+  MyS3Environments:
+    Type: String
+    Description: |
+      Which environment should we use this bucket
+    AllowedValues: 
+    - production
+    - staging
+    - development
+    - qa
+  MyBucketName:
+    Type: String
+    Description: Name of the bucket
+  MyBucketVersioningConfiguration:
+    Type: String
+    Description: |
+      Either turn bucket versioning on or off
+      Valid values are Enabled or Suspended
+    AllowedValues:
+    - Enabled
+    - Suspended
+Resources:
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketNamespace: global
+      # BucketNamePrefix: brandon-rich
+      BucketName: !Ref MyBucketName
+      VersioningConfiguration:
+        Status: !Ref MyBucketVersioningConfiguration
+      Tags:
+        - Key: Environment
+          Value: !Ref MyS3Environments
+Outputs:
+  MyS3BucketURL:
+    Description: URL of bucket
+    Value: !GetAtt MyS3Bucket.WebsiteURL
+  MyS3BucketARN:
+    Description: ARN of bucket
+    Value: !GetAtt MyS3Bucket.Arn

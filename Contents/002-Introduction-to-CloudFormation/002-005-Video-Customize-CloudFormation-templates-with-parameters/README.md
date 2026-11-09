@@ -1,0 +1,1 @@
+# [Customize CloudFormation templates with parameters](https://www.linkedin.com/learning/introduction-to-aws-cloudformation/customize-cloudformation-templates-with-parameters)

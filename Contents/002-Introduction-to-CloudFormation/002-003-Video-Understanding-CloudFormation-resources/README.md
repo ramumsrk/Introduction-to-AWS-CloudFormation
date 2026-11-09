@@ -1,0 +1,1 @@
+# [Understanding CloudFormation resources](https://www.linkedin.com/learning/introduction-to-aws-cloudformation/understanding-cloudformation-resources)

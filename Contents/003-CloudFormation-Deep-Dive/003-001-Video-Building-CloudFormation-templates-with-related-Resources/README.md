@@ -1,0 +1,1 @@
+# [Building CloudFormation templates with related Resources](https://www.linkedin.com/learning/introduction-to-aws-cloudformation/building-cloudformation-templates-with-related-resources)

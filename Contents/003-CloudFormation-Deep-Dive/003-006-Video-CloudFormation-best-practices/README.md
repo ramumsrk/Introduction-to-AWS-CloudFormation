@@ -1,0 +1,1 @@
+# [CloudFormation best practices](https://www.linkedin.com/learning/introduction-to-aws-cloudformation/cloudformation-best-practices)

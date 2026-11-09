@@ -1,0 +1,1 @@
+# [CloudFormation outputs](https://www.linkedin.com/learning/introduction-to-aws-cloudformation/cloudformation-outputs)
